@@ -1,0 +1,36 @@
+@inproceedings{Bac:Wil:WS-CP98,
+author = {Backofen, Rolf and Will, Sebastian},
+title = {Excluding Symmetries in Concurrent Constraint
+         Programming},
+booktitle = {Workshop on Modeling and Computing with Concurrent
+             Constraint Programming},
+year = {1998},
+doi = {https://www.semanticscholar.org/paper/Excluding-Symmetries-in-Concurrent-Constraint-Backofen-Will/542ba33068f962839b027b9442638bd070727783},
+user = {will},
+abstract = {
+            In many problems, non-determinism naturally arises in an concurrent
+            constraint-based formulation in form of disjunctive constraints. To
+            check consistency of disjunctive constraints, one needs to perform
+            search by splitting the constraint store into local computation
+            stores.  An important problem there is to eliminate symmetries, which
+            give rise to many different but ''similar'' solutions found by the
+            search procedure.  Since symmetries will give rise to an (often
+            exponential) amplification of the search space, symmetry exclusion
+            promises to efficiently prune the search tree.
+            
+            Hence, many constraint programmers have constructed mechanisms to
+            exclude at least some of the symmetries of their
+            problem. Unfortunately, symmetry exclusion was often not
+            straightforward to implement and had to be redesigned for every
+            special problem or enumeration strategy, which leaded to an
+            inflexibility in the program structure once it was introduced. Often
+            symmetry exclusion was not done at all or only for a small set of
+            symmetries. In other cases, where symmetry exclusion was implemented
+            it distracted the programmers attention from more important tasks.
+            
+            The contribution of our work is to give a generally applicable method
+            for the exclusion of arbitrary symmetries. To our knowledge, this is
+            the first general and declarative method for excluding symmetries in
+            concurrent constraint programming.}
+}
+

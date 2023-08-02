@@ -1,0 +1,24 @@
+@inproceedings{Miladi-Pankov-2019,
+author = {Miladi, Milad and Raden, Martin and Will, Sebastian and Backofen,  Rolf},
+title = {Fast and Accurate Structure Probability Estimation for Simultaneous Alignment and Folding of RNAs},
+booktitle = {19th International Workshop on Algorithms in Bioinformatics (WABI 2019)},
+year = {2019},
+doi = {10.4230/LIPIcs.WABI.2019.14},
+pdf = {http://www.bioinf.uni-freiburg.de/Publications/Miladi-Pankov-2019.pdf},
+volume = {143},
+user = {mmann},
+series = {Leibniz International Proceedings in Informatics (LIPIcs)},
+publisher = {Schloss Dagstuhl--Leibniz-Zentrum fuer Informatik},
+pages = {14:1--14:13},
+issn = {1868-8969},
+isbn = {978-3-95977-123-8},
+editor = {Katharina T. Huber and Dan Gusfield},
+address = {Dagstuhl, Germany},
+abstract = {Motivation: Simultaneous alignment and folding (SAF) of RNAs is the indispensable gold standard for inferring the structure of non-coding RNAs and their general analysis. The original algorithm, proposed by Sankoff, solves the theoretical problem exactly with a complexity of O(n6) in the full energy model. 
+            Over the last two decades, several variants and improvements of the Sankoff algorithm have been proposed to reduce its extreme complexity by proposing simplified energy models or imposing restrictions on the predicted alignments.
+            Results: Here we introduce a novel variant of Sankoff's algorithm that 
+            reconciles the simplifications of PMcomp, namely moving from the full energy model to a simpler base pair-based model, with the accuracy of the loop-based full energy model. 
+            Instead of estimating pseudo-energies from unconditional base pair probabilities, our model calculates energies from conditional base pair probabilities that allow to accurately capture structure probabilities, which obey a conditional dependency. Supporting modifications with surgical precision, this model gives rise to the fast and highly accurate novel algorithm Pankov (Probabilistic Sankoff-like simultaneous alignment and folding of RNAs inspired by Markov chains). Pankov benefits from the speed-up of excluding unreliable base-pairing without compromising the loop-based free energy model of the Sankoff's algorithm. We show that Pankov outperforms its predecessors LocARNA and SPARSE in folding quality and is faster than LocARNA. 
+            Pankov is developed as a branch of the LocARNA package and available at https://github.com/mmiladi/Pankov.}
+}
+

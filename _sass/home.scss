@@ -1,0 +1,125 @@
+.contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 960px) {  // Adjust the breakpoint as per your requirement
+        flex-direction: column;
+    }
+}
+
+.contact-panel {
+    flex: 1;
+    padding: 20px;
+}
+
+.home-intro-image {
+    flex: 0 0 40%;
+    padding: 20px;
+    max-width: 100%;  // Ensure the image does not overflow its container
+
+    img {
+        width: 100%;  // Make the image responsive
+        height: auto;
+    }
+
+    @media (max-width: 960px) {  // Adjust the breakpoint as per your requirement
+        width: 100%;  // Take the full width on smaller screens
+    }
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info dl {
+    display: flex;
+}
+
+.contact-info dt {
+    flex: 0 0 25%;
+    font-weight: bold;
+}
+
+.contact-info dd {
+    flex: 1;
+    margin-bottom: 0.2em;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info dd img {
+    margin-right: 0.5em;
+}
+
+
+.contact-info .details-block {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.news-list {
+    flex: 1 1 60%;
+    max-width: 60%;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.news-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.news-list li {
+    margin: 1.5em 0;
+    padding: 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: #F9F9F9;
+}
+
+.news-list li:hover {
+    background-color: #e0e0e0;
+}
+
+.news-list li a {
+    color: #344a9a;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.news-list li a:hover {
+    color: #1a2e8a;
+}
+
+.news-list .news-date {
+    display: inline-block;
+    color: #757575;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    margin-right: 0.5em;
+}
+
+.galaxy-iframe {
+    flex: 1 1 38%;
+    max-width: 38%;
+    min-width: 300px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .news-list,
+    .galaxy-iframe {
+        flex: 1 0 100%;
+        max-width: 100%;
+    }
+}

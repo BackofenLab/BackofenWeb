@@ -1,0 +1,54 @@
+html, body {
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.main-content {
+    padding: 50px 50px 50px 50px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    overflow-y: auto;
+    height: calc(100vh - 170px); /* subtract the height of the header and the new navbar */
+}
+
+.main-content h1 {
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif; /* New font */
+    color: #333;
+    text-transform: none;
+    letter-spacing: 1px; /* Slightly larger letter spacing */
+    line-height: 1.2; /* More breathable line height */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.2em;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.main-content h2 {
+    color: #344a9a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-bottom: 2px solid #344a9a;
+    padding-bottom: 5px;
+}
+
+@media (max-width: 1200px) {
+    .main-content {
+        padding: 0px 50px 0px 50px;
+    }
+}
+
+@media (max-width: 960px) {
+    .main-content {
+        padding: 0px 20px 0px 20px;
+        height: calc(100vh - 140px); /* subtract the height of the header and the new navbar */
+    }
+}
+
+@import "header";
+@import "nav";
+@import "home";
+@import "publication";

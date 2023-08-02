@@ -1,0 +1,43 @@
+@inproceedings{Salari:etal:_time_and_space_effic_rna:RECOMB2010,
+author = {Salari, Raheleh and Möhl, Mathias and Will, Sebastian and
+          Sahinalp, S. Cenk and Backofen, Rolf},
+title = {Time and Space Efficient {RNA}-{RNA} Interaction Prediction via
+         Sparse Folding},
+booktitle = {Proc. of RECOMB 2010},
+year = {2010},
+doi = {10.1007/978-3-642-12683-3_31},
+pdf = {http://www.bioinf.uni-freiburg.de/Publications/Salari:etal:_time_and_space_effic_rna:RECOMB2010.pdf},
+volume = {6044},
+user = {arichter},
+series = {Lecture Notes in Computer Science},
+publisher = {Springer-Verlag Berlin Heidelberg},
+pages = {473-490},
+editor = {Berger, Bonnie},
+abstract = {In the past years, a large set of new regulatory ncRNAs have
+            been identified, but the number of experimentally verified
+            targets is considerably low. Thus, computational target
+            prediction methods are on high demand. Whereas all previous
+            approaches for predicting a general joint structure have a
+            complexity of $O(n^6)$ running time and $O(n^4)$ space, a more time
+            and space efficient interaction prediction that is able to
+            handle complex joint structures is necessary for genome-wide
+            target prediction problems. In this paper we show how to reduce
+            both the time and space complexity of the RNA-RNA interaction
+            prediction problem as described by Alkan et al. via dynamic
+            programming sparsification - which allows to discard large
+            portions of DP tables without loosing optimality. Applying
+            sparsification techniques reduces the complexity of the original
+            algorithm from $O(n^6)$ time and $O(n^4)$ space to $O(n^4 \psi(n))$ time
+            and $O(n^2 \psi(n) + n^3)$ space for some function $\psi(n)$, which turns
+            out to have small values for the range of $n$ that we encounter in
+            practice. Under the assumption that the polymer-zeta property
+            holds for RNA-structures, we demonstrate that $\psi(n)=O(n)$ on
+            average, resulting in a linear time and space complexity
+            improvement over the original algorithm. We evaluate our
+            sparsified algorithm for RNA-RNA interaction prediction by total
+            free energy minimization, based on the energy model of Chitsaz
+            et al., on a set of known interactions. Our results confirm
+            the significant reduction of time and space requirements in
+            practice.}
+}
+

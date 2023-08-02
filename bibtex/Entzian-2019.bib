@@ -1,0 +1,27 @@
+@article{Entzian-2019,
+author = {Entzian, Gregor and Raden, Martin},
+title = {{pourRNA}  - a time- and memory-efficient approach for the guided exploration of {RNA} energy landscapes},
+journal = {Bioinformatics},
+year = {2020},
+doi = {10.1093/bioinformatics/btz583},
+pdf = {http://www.bioinf.uni-freiburg.de/Publications/Entzian-2019.pdf},
+volume = {36},
+user = {mmann},
+pages = {462-469},
+number = {2},
+issn = {1367-4803},
+abstract = {Motivation:
+            The folding dynamics of RNAs are typically studied via coarse-grained models of the underlying energy landscape to face the exponential growths of the RNA secondary structure space.
+            Still, studies of exact folding kinetics based on gradient basin abstractions are currently limited to short sequence lengths due to vast memory requirements.
+            In order to compute exact transition rates between gradient basins, state-of-the-art approaches apply global flooding schemes that require to memorize the whole structure space at once.
+            pourRNA tackles this problem via local flooding techniques where memorization is limited to the structure ensembles of individual gradient basins.
+            Results:
+            Compared to the only available tool for exact gradient basin based macro state transition rates (namely barriers), pourRNA computes the same exact transition rates up to ten times faster and requires two orders of magnitude less memory for sequences that are still computationally accessible for
+            exhaustive enumeration.
+            Parallelized computation as well as additional heuristics further speed up computations while still producing high quality transition model approximations.
+            The introduced heuristics enable a guided trade-off between model quality and required computational resources.
+            We introduce and evaluate a macroscopic direct-path heuristics to efficiently compute refolding energy barrier estimations for the co-transcriptionally trapped RNA sv11 of length 115nt.
+            Finally, we also show how pourRNA can be used to identify folding funnels and their respective energetically lowest minima.
+            Availability: pourRNA is freely available at https://github.com/ViennaRNA/pourRNA}
+}
+

@@ -1,0 +1,44 @@
+@inproceedings{backofen09:_spars_rna_foldin,
+author = {Backofen, Rolf and Tsur, Dekel and Zakov, Shay and
+          Ziv-Ukelson, Michal},
+title = {Sparse {RNA} Folding: Time and Space Efficient Algorithms},
+booktitle = {Proc. 20th Symp. Combinatorial Pattern Matching},
+year = {2009},
+doi = {10.1007/978-3-642-02441-2_22},
+pdf = {http://www.bioinf.uni-freiburg.de/Publications/backofen09:_spars_rna_foldin.pdf},
+volume = {5577},
+user = {backofen},
+series = {LNCS},
+publisher = {Springer},
+pages = {249-262},
+editor = {Gregory Kucherov and Esko Ukkonen},
+abstract = {The classical algorithm for {RNA} single
+            strand folding requires O(nZ) time and O(n2 ) space,
+            where n denotes the length of the input sequence and Z
+            is a sparsity parameter that satisfies n <= Z <= n^2 . We
+            show how to reduce the space complexity of this
+            algorithm. The space reduction is based on the
+            observation that some solutions for subproblems are
+            not examined after a certain stage of the algorithm,
+            and may be discarded from memory. This yields an O(nZ)
+            time and O(Z) space algorithm, that outputs both the
+            cardinality of the optimal folding as well as a
+            corresponding secondary structure. The space-efficient
+            approach also extends to the related RNA simultaneous
+            alignment with folding problem, and can be applied to
+            reduce the space complexity of the fastest algorithm
+            for this problem from O(n^2 m^2 ) down to O(nm^2 + Z),
+            where n and m denote the lengths of the input
+            sequences to be aligned, and Z is a sparsity
+            parameter that satisfies nm <= Z <= n^2 m^2 . In addition,
+            we also show how to speed up the base-pairing
+            maximization variant of RNA single strand folding. The
+            speed up is achieved by combining two independent
+            existing techniques, which restrict the number of
+            expressions that need to be examined in bottleneck
+            computations of these algorithms. This yields an O(LZ)
+            time and O(Z) space algorithm, where L denotes the
+            maximum cardinality of a folding of the input
+            sequence.}
+}
+

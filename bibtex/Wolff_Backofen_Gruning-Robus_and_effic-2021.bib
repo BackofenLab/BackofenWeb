@@ -1,0 +1,46 @@
+@article{Wolff_Backofen_Gruning-Robus_and_effic-2021,
+author = {Wolff, Joachim and Backofen, Rolf and Grüning, Björn},
+title = {Robust and efficient single-cell {Hi}-{C} clustering with 
+         approximate k-nearest neighbor graphs},
+journal = {Bioinformatics},
+year = {2021},
+doi = {10.1093/bioinformatics/btab394},
+pdf = {http://www.bioinf.uni-freiburg.de/Publications/Wolff_Backofen_Gruning-Robus_and_effic-2021.pdf},
+volume = {37},
+user = {backofen},
+pmid = {34021764},
+pages = {4006-4013},
+number = {22},
+issn = {1367-4803},
+abstract = {MOTIVATION: Hi-C technology provides insights into the 3D 
+            organization of the chromatin, and the single-cell Hi-C 
+            method enables researchers to gain knowledge about the 
+            chromatin state in individual cell levels. Single-cell Hi-C 
+            interaction matrices are high dimensional and very sparse. 
+            To cluster thousands of single-cell Hi-C interaction 
+            matrices, they are flattened and compiled into one matrix. 
+            Depending on the resolution, this matrix can have a few 
+            million or even billions of features; therefore, 
+            computations can be memory intensive. We present a 
+            single-cell Hi-C clustering approach using an approximate 
+            nearest neighbors method based on locality-sensitive hashing 
+            to reduce the dimensions and the computational resources. 
+            RESULTS: The presented method can process a 10 kb 
+            single-cell Hi-C dataset with 2600 cells and needs 40 GB of 
+            memory, while competitive approaches are not computable even 
+            with 1 TB of memory. It can be shown that the 
+            differentiation of the cells by their chromatin folding 
+            properties and, therefore, the quality of the clustering of 
+            single-cell Hi-C data is advantageous compared to 
+            competitive algorithms. AVAILABILITY AND IMPLEMENTATION: The 
+            presented clustering algorithm is part of the scHiCExplorer, 
+            is available on Github 
+            https://github.com/joachimwolff/scHiCExplorer, and as a 
+            conda package via the bioconda channel. The approximate 
+            nearest neighbors implementation is available via 
+            https://github.com/joachimwolff/sparse-neighbors-search and 
+            as a conda package via the bioconda channel. SUPPLEMENTARY 
+            INFORMATION: Supplementary data are available at 
+            Bioinformatics online.}
+}
+

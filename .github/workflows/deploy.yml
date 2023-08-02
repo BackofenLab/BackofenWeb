@@ -1,0 +1,45 @@
+name: Build Jekyll site
+
+env:
+  GITHUB_ACTOR: BackofenLab
+  GITHUB_REPOSITORY: BackofenLab/BackofenWeb
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+on:
+ push:
+   branches: ["main"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get prerequisites and clone repository
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+        run: |
+          set -x
+          sudo apt-get update
+          sudo apt-get install -y git
+          git clone "https://token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" .
+        shell: bash
+
+      - uses: dorny/paths-filter@v2
+        id: filter
+        with:
+          filters: |
+            bibtex:
+              - 'bibtex/**/*'
+
+      - name: Build the publication list (if bibtex entry was added or changed)
+        if: steps.filter.outputs.bibtex == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: "scripts/build-publication-list.sh"
+        shell: bash
+
+      - name: Run build script for Jekyll-based Github Pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: "scripts/build-docs.sh"
+        shell: bash
