@@ -18,7 +18,6 @@ title:  Bioinformatics
       <div class="details-block">
         <dd>E-mail: <img src="http://bioinf.uni-freiburg.de/pics/mail/backofen.png" alt="mail:backofen"> </dd>
         <dd>Phone: +49 (0) 761 / 203 - 7461</dd>
-        <dd>Fax: +49 (0) 761 / 203 - 7462</dd>
       </div>
     </dl>
   </div>
@@ -30,7 +29,6 @@ title:  Bioinformatics
       <div class="details-block">
         <dd>E-mail: <img src="http://bioinf.uni-freiburg.de/pics/mail/secretary.png" alt="mail:monika"> </dd>
         <dd>Phone: +49 (0) 761 / 203 - 7460</dd>
-        <dd>Fax: +49 (0) 761 / 203 - 7462</dd>
       </div>
     </dl>
   </div>
