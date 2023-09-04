@@ -122,7 +122,7 @@ title: Team
         </ul>
       </div>
     </div>
-
+  </div>
 
   <div class="team-title">Freiburg Galaxy Team</div>
   <div class="team-panel-wrapper">
@@ -597,6 +597,51 @@ title: Team
         </ul>
       </div>
     </div>
-    <!-- -->
-  <div>
+  </div>
+
+  <div class="team-title">Alumni</div>
+  <div class="alumni-wrapper">
+      <ul class="alumni-list">
+          <li>Dinh Van Tran</li>
+          <li>Beatriz Serrano-Solano</li>
+          <li>Simon Bray</li>
+          <li>Anastasia Karavaeva</li>
+          <li>Joachim Wolff</li>
+          <li>Gianmauro Cuccuru</li>
+          <li>Oleg Zharkov</li>
+          <li>Florian Eggenhofer</li>
+          <li>Milad Miladi</li>
+          <li>Mehmet Tekman</li>
+          <li>Stephan Flemming</li>
+          <li>Jan Leendertse</li>
+          <li>Helena Rasche</li>
+          <li>Daniel Maticzka</li>
+          <li>Sita J. Saunders</li>
+          <li>Torsten Houwaart</li>
+          <li>Clemens Blank</li>
+          <li>Patrick Wright</li>
+          <li>Fabrizio Costa</li>
+          <li>Bela Johannes Bender</li>
+          <li>Robert Kleinkauf</li>
+          <li>Cameron Smith</li>
+          <li>Kousik Kundu</li>
+          <li>Christina Otto</li>
+          <li>Dragos Sorescu</li>
+          <li>Steffen Heyne</li>
+          <li>Andreas S. Richter</li>
+          <li>Dominic Rose</li>
+          <li>Sebastian Will</li>
+          <li>Mathias Möhl</li>
+          <li>Rileen Sinha</li>
+          <li>Oliver Krieg</li>
+          <li>Anke Busch</li>
+          <li>Michael Beckstette</li>
+          <li>Swetlana Nikolajewa</li>
+          <li>Rainer Pudimat</li>
+          <li>Michael Hiller</li>
+          <li>Sven Siebert</li>
+          <li>Stefan Seemann</li>
+      </ul>
+  </div>
+
 </div>

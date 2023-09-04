@@ -1,4 +1,6 @@
 .team-section {
+  margin-left: 50px;
+  margin-right: 50px;
   margin-bottom: 2rem;
   display: flex;
   flex-wrap: wrap;
@@ -6,6 +8,7 @@
 }
 
 .team-title {
+  display: block;
   font-family: 'Helvetica, Arial, sans-serif';  // Elegant Font
   font-size: 36px;  // Increase Size
   text-transform: uppercase;  // Uppercase Letters
@@ -15,6 +18,7 @@
   margin-bottom: 30px;  // Bottom Margin
   color: #344a9a;  // Text Color
   text-align: center;  // Center Align
+  width: 100%;
 }
 
 .team-panel-wrapper {
@@ -94,4 +98,29 @@
 
 .ai, .fa, .fa-brands {
   color: #344a9a;
+}
+
+.alumni-wrapper {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 2rem;
+  text-align: center;  // Center the text
+  display: block;  // Make sure it takes its own line
+  width: 100%;
+}
+
+.alumni-list {
+  list-style-type: none;  // Remove list bullets
+  padding: 0;
+  margin: 0 auto;  // Centering the list
+  font-family: 'Helvetica, Arial, sans-serif';  // Consistent with the rest of the page
+  font-size: 20px;  // Size of text
+  width: fit-content;
+  display: inline-block;  // Make it inline so it centers properly
+}
+
+.alumni-list li {
+  margin-bottom: 10px;
+  padding: 5px;
+  text-align: center;  // Center the text within each list item
 }
