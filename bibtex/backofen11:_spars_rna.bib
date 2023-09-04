@@ -1,0 +1,48 @@
+@article{backofen11:_spars_rna,
+author = {Backofen, Rolf and
+          Tsur, Dekel and
+          Zakov, Shay and
+          Ziv-Ukelson, Michal},
+title = {Sparse {RNA} folding: Time and space efficient algorithms},
+journal = {J. Discrete Algorithms},
+year = {2011},
+doi = {10.1016/j.jda.2010.09.001},
+pdf = {http://www.bioinf.uni-freiburg.de/Publications/backofen11:_spars_rna.pdf},
+volume = {9},
+user = {backofen},
+pages = {12-31},
+number = {1},
+bibsource = {DBLP, http://dblp.uni-trier.de},
+abstract = {The currently fastest algorithm for RNA Single Strand
+            Folding requires O(nZ) time and Θ(n2) space, where n
+            denotes the length of the input string and Z is a
+            sparsity parameter satisfying n <= Z < n2. We show how
+            to reduce the time and space complexities of this
+            algorithm in the sparse case. The space reduction is
+            based on the observation that some solutions for
+            sub-instances are not examined after a certain stage
+            of the algorithm, and may be discarded from
+            memory. The running time speed up is achieved by
+            combining two independent sparsification criteria,
+            which restrict the number of expressions that need to
+            be examined in bottleneck computations of the
+            algorithm. This yields an O(n2 + P Z) time and Θ(Z)
+            space algorithm, where P is a sparsity parameter
+            satisfying P < n <= Z <= n(P +1). For the base-pairing
+            maximization variant, the time complexity is further
+            reduced to O(LZ), where L denotes the maximum number
+            of base-pairs in a folding of the input string and
+            satisfies L <=n\2. The presented techniques also
+            extend to the related RNA Simultaneous Alignment and
+            Folding problem. For an input composed of two strings
+            of lengths n and m, the time and space complexities
+            are reduced from O(nm˜Z) and Θ(n2m2) down to O(n2m2 +
+            ˜P ˜Z) and Θ(nm2 + ˜Z ) respectively, where ˜Z and ˜P
+            are sparsity parameters satisfying ˜P <nm<= ˜Z < nm(˜P
+            +3). A preliminary extended abstract of this work
+            previously appeared in Backofen et al. (2009)
+            [5]. Code implementations (in Java) may be downloaded
+            from:
+            http://www.cs.bgu.ac.il/~zakovs/RNAfold/SparseFold.zip.}
+}
+

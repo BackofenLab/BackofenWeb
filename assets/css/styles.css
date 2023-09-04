@@ -1,0 +1,717 @@
+html, body {
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.main-content {
+  padding: 50px 50px 50px 50px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  overflow-y: auto;
+  height: calc(100vh - 170px); /* subtract the height of the header and the new navbar */
+}
+
+.main-content h1 {
+  font-size: 2em;
+  font-family: "Roboto", sans-serif; /* New font */
+  color: #333;
+  text-transform: none;
+  letter-spacing: 1px; /* Slightly larger letter spacing */
+  line-height: 1.2; /* More breathable line height */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.2em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.main-content h2 {
+  color: #344a9a;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  border-bottom: 2px solid #344a9a;
+  padding-bottom: 5px;
+}
+
+@media (max-width: 1200px) {
+  .main-content {
+    padding: 0px 50px 0px 50px;
+  }
+}
+@media (max-width: 960px) {
+  .main-content {
+    padding: 0px 20px 0px 20px;
+    height: calc(100vh - 140px); /* subtract the height of the header and the new navbar */
+  }
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #344a9a;
+  color: #fff;
+  max-height: 80px;
+}
+
+.logo-bioinf {
+  max-width: 80px;
+  order: 1;
+  margin-left: 60px;
+  margin-right: 70px;
+}
+
+.logo-uni-freiburg {
+  max-width: 300px;
+  order: 3;
+  margin-left: auto;
+}
+
+.logo-bioinf img, .logo-uni-freiburg img {
+  width: 100%;
+  height: auto;
+}
+
+.title {
+  order: 2;
+  text-align: center;
+  margin: 0 0.5px;
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 1000px) {
+  .logo-bioinf {
+    margin: 20px;
+    max-width: 80px;
+  }
+  .logo-uni-freiburg {
+    max-width: 250px;
+  }
+  .title {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 960px) {
+  .header {
+    padding: 5px 10px;
+  }
+  .logo-bioinf {
+    margin: 5px;
+    max-width: 70px;
+  }
+  .logo-uni-freiburg {
+    max-width: 180px;
+  }
+  .title {
+    font-size: 0.65em;
+    padding-right: 10px;
+  }
+}
+.navbar {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e0e0e0;
+  padding: 10px 20px;
+  width: calc(100% - 40px);
+  top: 120px;
+  z-index: 99;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.navbar li {
+  white-space: nowrap;
+  padding: 5px 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a.active {
+  background-color: #344a9a;
+  color: #fff;
+}
+
+.navbar a:hover {
+  background-color: #344a9a;
+  color: #ffffff;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px;
+}
+
+@media (max-width: 1200px) {
+  .navbar ul {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .navbar li {
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 5px 0;
+  }
+}
+@media (max-width: 960px) {
+  .navbar {
+    top: 90px;
+  }
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 135px);
+    position: fixed;
+    top: 135px;
+    right: 0;
+    background-color: #e0e0e0;
+  }
+  .burger {
+    display: block;
+  }
+  .nav-open {
+    display: flex !important;
+    z-index: 101;
+  }
+}
+.contact-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 960px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+}
+
+.contact-panel {
+  flex: 1;
+  padding: 20px;
+}
+
+.home-intro-image {
+  flex: 0 0 40%;
+  padding: 20px;
+  max-width: 100%;
+}
+.home-intro-image img {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 960px) {
+  .home-intro-image {
+    width: 100%;
+  }
+}
+
+.contact-info {
+  margin-bottom: 20px;
+}
+
+.contact-info dl {
+  display: flex;
+}
+
+.contact-info dt {
+  flex: 0 0 25%;
+  font-weight: bold;
+}
+
+.contact-info dd {
+  flex: 1;
+  margin-bottom: 0.2em;
+  display: flex;
+  align-items: center;
+}
+
+.contact-info dd img {
+  margin-right: 0.5em;
+}
+
+.contact-info .details-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.news-list {
+  flex: 1 1 60%;
+  max-width: 60%;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.news-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.news-list li {
+  margin: 1.5em 0;
+  padding: 1em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #F9F9F9;
+}
+
+.news-list li:hover {
+  background-color: #e0e0e0;
+}
+
+.news-list li a {
+  color: #344a9a;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.news-list li a:hover {
+  color: #1a2e8a;
+}
+
+.news-list .news-date {
+  display: inline-block;
+  color: #757575;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  margin-right: 0.5em;
+}
+
+.galaxy-iframe {
+  flex: 1 1 38%;
+  max-width: 38%;
+  min-width: 300px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .news-list,
+  .galaxy-iframe {
+    flex: 1 0 100%;
+    max-width: 100%;
+  }
+}
+.search-and-filter-panel {
+  width: 60%;
+  margin: 15px auto 5px;
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+#search-bar {
+  flex-grow: 1;
+  display: block;
+  width: calc(100% - 20px); /* Adjusted to leave space for the reset button */
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="%23000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>');
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+
+#search-bar:focus {
+  outline: 2px solid #719ECE; /* Change 'blue' to your desired color */
+}
+
+#reset-all-filters {
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%); /* Center vertically */
+  display: none;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/reset.png");
+  background-size: cover;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+#reset-all-filters:hover {
+  transform: scale(1.1) translateY(-50%);
+}
+
+#reset-all-filters:active {
+  transform: scale(0.9) translateY(-50%); /* Decrease the size of the icon slightly when clicked */
+}
+
+#reset-all-filters:focus {
+  outline: none; /* Remove the default focus outline */
+  box-shadow: 0 0 0 2px #719ECE; /* Add a light blue focus ring */
+}
+
+.filter-panel {
+  width: 80%; /* set the width to 80% */
+  margin: 5px auto; /* center the panel horizontally */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.filter-container {
+  flex-grow: 0;
+  min-width: 160px;
+  width: auto; /* optional */
+  margin-bottom: 10px;
+}
+
+.filter-reset {
+  position: absolute;
+  right: 0;
+}
+
+.filter-container select {
+  margin: 5px;
+  width: 200px;
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  border: 1px solid #ccc; /* Maintain a light border */
+  border-radius: 10px; /* Add rounded corners */
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle drop shadow for depth */
+  appearance: none; /* Remove the default select arrow */
+  transition: box-shadow 0.3s ease; /* Add transition for hover effect */
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'><path d='M5.83301 8.33337L10.0003 12.5007L14.1667 8.33337' stroke='%23667EEA' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 0.7em center; /* Position the icon on the right side of the select */
+  background-size: 10px; /* Size of the icon */
+}
+
+.filter-container select:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+}
+
+.filter-container select:focus {
+  outline: none; /* Remove the default focus outline */
+  box-shadow: 0 0 0 2px #719ECE; /* Add a light blue focus ring */
+}
+
+#publication-count {
+  text-align: center;
+  margin: 5px 0;
+}
+
+.publication {
+  margin: 20px;
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px; /* Round corners for a softer, more modern look */
+  background-color: #F8F8F8; /* Light grey background */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Drop shadow for depth */
+  transition: box-shadow 0.3s ease; /* Transition for hover effect */
+}
+
+.publication:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* More pronounced drop shadow on hover */
+}
+
+.publication .title a {
+  text-decoration: none; /* Remove underline from the title link */
+  font-size: 32px; /* Increase the size of the title */
+  display: block; /* Display the title as a block element to add vertical space */
+  margin-bottom: 20px; /* Add vertical space below the title */
+  text-align: left;
+  color: #344a9a;
+  font-family: "Roboto", sans-serif;
+}
+
+.publication .title a:visited {
+  color: #344a9a;
+}
+
+.publication .authors {
+  line-height: 1.6;
+  font-size: 18px; /* Slightly increase the size */
+  margin-bottom: 10px; /* Maintain the vertical space */
+}
+
+.publication .journal {
+  font-style: italic; /* Keep journal italic */
+  font-size: 14px; /* Slightly reduce the size */
+  margin-bottom: 20px; /* Maintain the vertical space */
+}
+
+.publication .button-container {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: flex-start; /* Align the buttons to the left */
+}
+
+.publication .button-container > div {
+  flex: 0 0 auto; /* This will prevent flex items from growing and shrinking, which might be causing unwanted space */
+  margin-right: 15px; /* Add some space to the right of each div */
+}
+
+.publication .button-container > div:last-child {
+  margin-right: 0; /* Remove the right margin from the last div */
+}
+
+.publication .button-container a {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  background-color: #b3b3b3;
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.publication .button-container a:hover {
+  background-color: #344a9a;
+}
+
+#filter-toggle-button {
+  display: none;
+  margin: auto; /* centers the button */
+}
+
+#back-to-top {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 20px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #344a9a; /* Dark background */
+  color: white; /* White text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#back-to-top:hover {
+  background-color: #888; /* Add a dark grey background on hover */
+}
+
+@media (max-width: 960px) {
+  .filter-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  .filter-panel.expanded {
+    max-height: 500px; /* or whatever max-height you want */
+  }
+  .search-and-filter-panel {
+    width: 100%;
+  }
+  /* 1. Increase the width of the search box */
+  .search-bar {
+    width: 100%; /* Adjust width considering padding and the icon */
+    box-sizing: border-box; /* This makes sure the input does not overflow its container due to padding */
+  }
+  /* 2. Reduce the top margin */
+  .publications {
+    margin-top: 20px; /* Adjust this value according to your current margin */
+  }
+  /* 3. Make the select boxes smaller */
+  .filter-container select {
+    width: 80%; /* Adjust this value to what you find most suitable */
+    min-width: 160px; /* minimum width */
+    box-sizing: border-box; /* This makes sure the select does not overflow its container due to padding */
+  }
+  #filter-toggle-button {
+    display: inline-block;
+  }
+  .publication .title a {
+    font-size: 22px; /* Increase the size of the title */
+    margin-bottom: 10px; /* Add vertical space below the title */
+  }
+  .publication .authors {
+    line-height: 1.4;
+    font-size: 14px; /* Slightly increase the size */
+    margin-bottom: 10px; /* Maintain the vertical space */
+  }
+  .publication .journal {
+    font-size: 12px; /* Slightly reduce the size */
+    margin-bottom: 10px; /* Maintain the vertical space */
+  }
+  .publication .button-container a {
+    padding: 8px 18px;
+  }
+  .publication .button-container > div {
+    margin-right: 10px; /* Add some space to the right of each div */
+  }
+}
+.warning-message {
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  border-radius: 4px;
+  padding: 1rem;
+  font-size: 16px;
+  color: #856404;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.team-section {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-title {
+  display: block;
+  font-family: "Helvetica, Arial, sans-serif";
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-shadow: 2px 2px 4px #aaa;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  color: #344a9a;
+  text-align: center;
+  width: 100%;
+}
+
+.team-panel-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.team-panel {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 400px;
+  height: 280px;
+  margin: 15px;
+  margin-top: 75px;
+  text-align: center;
+  position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+  .team-panel {
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+}
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.name-title {
+  font-weight: bold;
+  margin-top: 60px;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.role-title {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.info-box {
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+  padding: 10px;
+  padding-left: 40px;
+  font-size: 14px;
+}
+
+.info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info li {
+  margin-bottom: 5px;
+}
+
+.info li i {
+  width: 20px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.ai, .fa, .fa-brands {
+  color: #344a9a;
+}
+
+.alumni-wrapper {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 2rem;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.alumni-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  font-family: "Helvetica, Arial, sans-serif";
+  font-size: 20px;
+  width: fit-content;
+  display: inline-block;
+}
+
+.alumni-list li {
+  margin-bottom: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,69 @@
+@inproceedings{Will_etal-SPARSE-RECOMB2013,
+author = {Will, Sebastian and Schmiedl, Christina and 
+          Miladi, Milad and Möhl, Mathias and Backofen, Rolf},
+title = {{SPARSE}: Quadratic Time Simultaneous Alignment and
+         Folding of {RNA}s Without Sequence-Based Heuristics},
+booktitle = {Proceedings of the 17th International Conference on
+             Research in Computational Molecular Biology (RECOMB
+             2013)},
+year = {2013},
+doi = {10.1007/978-3-642-37195-0_28},
+pdf = {http://www.bioinf.uni-freiburg.de/Publications/Will_etal-SPARSE-RECOMB2013.pdf},
+volume = {7821},
+user = {will},
+series = {LNCS},
+publisher = {Springer Berlin Heidelberg},
+pages = {289-290},
+isbn = {978-3-642-37194-3},
+editor = {Deng, Minghua and Jiang, Rui and Sun, Fengzhu and
+          Zhang, Xuegong},
+abstract = {Motivation: There is increasing evidence of
+            pervasive transcription, resulting in hundreds of
+            thousands of ncRNAs of unknown function. Standard
+            computational analysis tasks for inferring
+            functional annotations like clustering require fast
+            and accurate RNA comparisons based on sequence and
+            structure similarity.  The gold standard for the
+            latter is Sankoff’s algorithm, which simultaneously
+            aligns and folds RNAs. Because of its extreme time
+            complexity of $O(n^6)$, numerous faster
+            "Sankoff-style" approaches have been
+            suggested. Several such approaches introduce
+            heuristics based on sequence alignment, which
+            compromises the alignment quality for RNAs with
+            sequence identities below $60\%$. Avoiding such
+            heuristics, as e.g. in LocARNA, has been assumed to
+            prohibit time complexities better than $O(n^4)$,
+            which strongly limits large-scale applications.
+            Results: Breaking this barrier, we introduce SPARSE
+            (Sparse Prediction and Alignment of RNAs using
+            Structure Ensembles), a novel quadratic time
+            Sankoff-style approach that does not rely on
+            sequence-based heuristics but employs structural
+            properties of RNA ensembles; its $O(n^2)$ complexity
+            matches the one of sequence alignment. The approach
+            is based on a novel lightweight Sankoff-style
+            alignment model, for which we introduce the
+            algorithm PARSE. For the first time it transfers the
+            Sankoff-model completely to a lightweight energy
+            model; thus, it is more expressive than all previous
+            lightweight methods, which inherit the PMcomp
+            model. In comparison to LocARNA and similar
+            approaches, the novel model enables much stronger
+            sparsification based on the RNA structure ensemble;
+            consequently, SPARSE aligns and folds RNAs with
+            similar alignment and better folding quality in
+            significantly less time. Finally, SPARSE aligns
+            ncRNAs from the challenging low sequence identity
+            region more accurately than tools relying on
+            sequence-based heuristics.  Conclusion: Our results
+            indicate that a complete lightweight Sankoff-style
+            model with stronger sparsification can increase the
+            performance and accuracy of RNA alignment, where the
+            potential of the model points far beyond the studied
+            prototype. Not falling back on sequence comparison,
+            SPARSE suggests itself for large scale similarity
+            assessment of RNAs with moderate to very low
+            sequence identity.}
+}
+
