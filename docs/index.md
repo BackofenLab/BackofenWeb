@@ -8,6 +8,8 @@ title:  Bioinformatics
 
 # Bioinformatics Group Freiburg
 
+
+<!--
 <div class="contact-wrapper">
   <div class="contact-panel" markdown="1">
 
@@ -75,7 +77,7 @@ title:  Bioinformatics
         <li>
           <span class="news-date">[Feb 2022]</span> Im Rahmen der <a href="https://www.tf.uni-freiburg.de/studium/studieninteressierte/schueler/schueler#Sch_ler-Ingenieur-Akademie__SIA_">Schüler-Ingenieur-Akademie (SIA)</a> führen wir interessierte Schüerinnen und Schüler in unserem Workshop <a href="http://www.bioinf.uni-freiburg.de/Lehre/Courses/2012_WS/Workshop/">'Bioinformatik - finde einen Gendefekt'</a> in allgemeine Tätigkeiten und Aufgaben der Bioinformatikforschung ein.
         </li>
-        <!-- News items without a date can be added without the news-date span -->
+
         <li>
           Our work together with the collaborators from the German Cancer Research Center and the Faculty of Medicine has been published in Nature Communication:
           <br><a href="https://www.nature.com/articles/s41467-019-10489-2">Nature Communication</a>
@@ -99,6 +101,20 @@ title:  Bioinformatics
     <div class="galaxy-iframe">
       <iframe src="https://usegalaxy-eu.github.io/widgets/news.html" style="border: 0px; background: #f2f3f2; height: 540px;"></iframe>
     </div>
+  </div>
+</div>
+ -->
+
+<div class="row">
+  <div class="col-lg-6">
+  {% include contact-card.html
+              header="Head of the Group"
+              name="Prof Dr. Rolf Backofen"
+              email_image="http://bioinf.uni-freiburg.de/pics/mail/backofen.png"
+              phone="+49 (0) 761 / 203 - 7461"
+  %}
+  </div>
+  <div class="col-lg-6">
   </div>
 </div>
 

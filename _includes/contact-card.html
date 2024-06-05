@@ -1,0 +1,24 @@
+<div class="card mb-3" style="max-width: 540px; margin: auto;">
+  <div class="card-header">
+    <h2 class="h5">{{ include.header }}</h2>
+  </div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-12">
+        <h5>{{ include.name }}</h5>
+      </div>
+      <div class="col-12">
+        <dl class="row">
+          {% if include.email_image %}
+            <dt class="col-sm-3 col-12">E-mail:</dt>
+            <dd class="col-sm-9 col-12"><img src="{{ include.email_image }}" class="img-fluid"></dd>
+          {% endif %}
+          {% if include.phone %}
+            <dt class="col-sm-3 col-12">Phone:</dt>
+            <dd class="col-sm-9 col-12">{{ include.phone }}</dd>
+          {% endif %}
+        </dl>
+      </div>
+    </div>
+  </div>
+</div>
