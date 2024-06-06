@@ -1,24 +1,49 @@
-<div class="card mb-3" style="max-width: 540px; margin: auto;">
-  <div class="card-header">
-    <h2 class="h5">{{ include.header }}</h2>
-  </div>
-  <div class="card-body">
-    <div class="row">
-      <div class="col-12">
-        <h5>{{ include.name }}</h5>
-      </div>
-      <div class="col-12">
-        <dl class="row">
-          {% if include.email_image %}
-            <dt class="col-sm-3 col-12">E-mail:</dt>
-            <dd class="col-sm-9 col-12"><img src="{{ include.email_image }}" class="img-fluid"></dd>
-          {% endif %}
-          {% if include.phone %}
-            <dt class="col-sm-3 col-12">Phone:</dt>
-            <dd class="col-sm-9 col-12">{{ include.phone }}</dd>
-          {% endif %}
-        </dl>
-      </div>
+<div class="row contact-card mb-3">
+  <h2 class="h3 text-primary">{{ include.header }}</h2>
+  <hr >
+  <div class="row">
+    <div class="col-md-5">
+      <h5>{{ include.name }}</h5>
+    </div>
+    <div class="col-md-7">
+      <dl class="row">
+        {% if include.email %}
+          <dt class="col-3">E-mail:</dt>
+          <dd class="col-9"><a href="mailto:{{ include.email }}">{{ include.email }}</a></dd>
+        {% endif %}
+        {% if include.phone %}
+          <dt class="col-3">Phone:</dt>
+          <dd class="col-9">{{ include.phone }}</dd>
+        {% endif %}
+        {% if include.chair %}
+          <dt class="col-3"></dt>
+          <dd class="col-9">{{ include.chair }}</dd>
+        {% endif %}
+        {% if include.department %}
+          <dt class="col-3"></dt>
+          <dd class="col-9">{{ include.department }}</dd>
+        {% endif %}
+        {% if include.university %}
+          <dt class="col-3"></dt>
+          <dd class="col-9">{{ include.university }}</dd>
+        {% endif %}
+        {% if include.street %}
+          <dt class="col-3"></dt>
+          <dd class="col-9">{{ include.street }}</dd>
+        {% endif %}
+        {% if include.postcode %}
+          <dt class="col-3"></dt>
+          <dd class="col-9">{{ include.postcode }}</dd>
+        {% endif %}
+        {% if include.country %}
+          <dt class="col-3"></dt>
+          <dd class="col-9">{{ include.country }}</dd>
+        {% endif %}
+        {% if include.icon and include.link and include.linktext %}
+          <dt class="col-3"></dt>
+          <dd class="col-9"><img src="{{ include.icon }}">   <a href="{{ include.link }}">{{include.linktext}}</a></dd>
+        {% endif %}
+      </dl>
     </div>
   </div>
 </div>

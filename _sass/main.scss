@@ -9,6 +9,10 @@ h1 {
     text-align: center;
 }
 
+.contact-card {
+    max-width: 720px;
+}
+
 @import "header";
 @import "navbar";
 @import "publication";

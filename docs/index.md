@@ -10,51 +10,9 @@ title:  Bioinformatics
 
 
 <!--
-<div class="contact-wrapper">
-  <div class="contact-panel" markdown="1">
 
-## Head of the Group
-  <div class="contact-info">
-    <dl>
-      <dt>Prof Dr. Rolf Backofen</dt>
-      <div class="details-block">
-        <dd>E-mail: <img src="http://bioinf.uni-freiburg.de/pics/mail/backofen.png" alt="mail:backofen"> </dd>
-        <dd>Phone: +49 (0) 761 / 203 - 7461</dd>
-      </div>
-    </dl>
-  </div>
 
-## Secretary
-  <div class="contact-info">
-    <dl>
-      <dt>Monika Degen-Hellmuth</dt>
-      <div class="details-block">
-        <dd>E-mail: <img src="http://bioinf.uni-freiburg.de/pics/mail/secretary.png" alt="mail:monika"> </dd>
-        <dd>Phone: +49 (0) 761 / 203 - 7460</dd>
-      </div>
-    </dl>
-  </div>
 
-## Address
-  <div class="contact-info">
-    <dl>
-      <dt>Bioinformatics Group</dt>
-      <div class="details-block">
-        <dd>Department of Computer Science </dd>
-        <dd>Albert-Ludwigs-University Freiburg</dd>
-        <dd>Georges-Köhler-Allee 106</dd>
-        <dd>79110 Freiburg</dd>
-        <dd>Germany</dd>
-        <dd><img src="{{ site.baseurl }}/assets/images/windrose.gif"> <a href="{{ site.baseurl }}/404.html">Location</a> </dd>
-      </div>
-    </dl>
-  </div>
-  </div>
-
-  <div class="home-intro-image">
-    <a href="http://www.bioinf.uni-freiburg.de/Research/index.html?en"><img src="{{ site.baseurl }}/assets/images/group-m.jpg" alt="Group"></a>
-  </div>
-</div>
 
 # News and Information
 
@@ -105,16 +63,41 @@ title:  Bioinformatics
 </div>
  -->
 
-<div class="row">
-  <div class="col-lg-6">
+<hr>
+<div class="row mt-5">
+  <div class="col-lg-6 d-flex flex-column align-items-center">
+
   {% include contact-card.html
               header="Head of the Group"
-              name="Prof Dr. Rolf Backofen"
-              email_image="http://bioinf.uni-freiburg.de/pics/mail/backofen.png"
+              name="Prof. Dr. Rolf Backofen"
+              email="backofen@informatik.uni-freiburg.de"
               phone="+49 (0) 761 / 203 - 7461"
+  %}
+
+  {% include contact-card.html
+              header="Secretary"
+              name="Monika Degen-Hellmuth"
+              email="degenhel@informatik.uni-freiburg.de"
+              phone="+49 (0) 761 / 203 - 7460"
+  %}
+
+  {% include contact-card.html
+              header="Address"
+              name=""
+              chair="Bioinformatics Group"
+              department="Department of Computer Science"
+              university="Albert-Ludwigs-University Freiburg"
+              street="Georges-Köhler-Allee 106"
+              postcode="79110 Freiburg"
+              country="Germany"
+              icon="../assets/images/windrose.gif"
+              link="../404.html"
+              linktext="Location"
   %}
   </div>
   <div class="col-lg-6">
+
+    <a href="http://www.bioinf.uni-freiburg.de/Research/index.html?en"><img src="{{ site.baseurl }}/assets/images/group-m.jpg" alt="Group"> </a>
+
   </div>
 </div>
-
