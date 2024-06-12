@@ -1,0 +1,47 @@
+<style>
+  .card-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .card-body {
+    padding: 1.25rem;
+  }
+
+  .badge {
+    align-self: flex-start;
+    min-width: 80px;
+    text-align: center;
+  }
+
+  .news-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  .news-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+</style>
+
+<div class="mb-4">
+  <div class="card-wrapper">
+    <div class="card">
+      <div class="card-body">
+        <div class="d-flex align-items-start">
+          {% if include.date %}
+            <span class="badge bg-secondary me-3">{{ include.date }}</span>
+          {% endif %}
+          <div class="flex-grow-1">
+            <span class="">{{ include.text }}</span>
+            {% if include.link and include.link_text %}
+              <br>
+              <a href="{{ include.link }}" class="news-link mt-2">{{ include.link_text }}</a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
