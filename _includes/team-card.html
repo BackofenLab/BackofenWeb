@@ -1,0 +1,117 @@
+<style>
+    .team-card {
+        max-width: 400px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 75px;
+        margin-bottom: 30px;
+    }
+
+    .avatar {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        top: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .card-title {
+        font-weight: bold;
+        margin-top: 60px;
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+
+    .card-text {
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+
+    .list-unstyled li {
+        margin-bottom: 5px;
+    }
+
+    .list-unstyled li i {
+        margin-right: 5px;
+    }
+
+    .contact-info .icon {
+        display: inline-block;
+        width: 20px;
+        text-align: center;
+        margin-right: 10px;
+    }
+
+    .social-links a {
+        margin: 0 10px;
+    }
+</style>
+
+<div class="card team-card">
+    <div class="text-center">
+      {% if include.avatar_url %}
+        <img src="{{ include.avatar_url }}" alt="Avatar" class="avatar">
+      {% elsif include.github_link %}
+        {% assign github_username = include.github_link | split: "/" | last %}
+        <img src="https://github.com/{{ github_username }}.png" alt="GitHub Avatar" class="avatar">
+      {% else %}
+        <img src="{{ '/assets/images/default-avatar.png' | relative_url }}" alt="Default Avatar" class="avatar">
+      {% endif %}
+    </div>
+    <div class="card-body">
+        <div class="text-center">
+            <h5 class="card-title">{{ include.name }}</h5>
+            <p class="card-text">{{ include.title }}</p>
+        </div>
+    <div class="d-flex justify-content-center">
+        <ul class="list-unstyled mt-4 text-left contact-info">
+          {% if include.email %}
+            <li><i class="fas fa-envelope icon"></i> <a href="mailto:{{ include.email }}">{{ include.email }}</a></li>
+          {% endif %}
+          {% if include.github_link %}
+            {% assign github_username = include.github_link | split: "/" | last %}
+            <li><i class="fab fa-github icon"></i> <a href="{{ include.github_link }}">{{ github_username }}</a></li>
+          {% endif %}
+          {% if include.phone %}
+            <li><i class="fas fa-phone icon"></i> {{ include.phone }}</li>
+          {% endif %}
+          {% if include.location %}
+            <li><i class="fas fa-building icon"></i> {{ include.location }}</li>
+          {% endif %}
+          {% if include.homepage %}
+            <li><i class="fas fa-home icon"></i> <a href="{{ include.homepage }}">Personal Page</a></li>
+          {% endif %}
+        </ul>
+      </div>
+      <div class="text-center mt-2 social-links">
+        {% if include.orcid %}
+            <a href="{{ include.orcid }}" title="ORCID"><i class="ai ai-orcid"></i></a>
+        {% endif %}
+        {% if include.google_scholar %}
+            <a href="{{ include.google_scholar }}" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+        {% endif %}
+        {% if include.researchgate %}
+            <a href="{{ include.researchgate }}" title="ResearchGate"><i class="ai ai-researchgate"></i></a>
+        {% endif %}
+        {% if include.mastodon %}
+            <a href="{{ include.mastodon }}" title="Mastodon"><i class="fab fa-mastodon"></i></a>
+        {% endif %}
+        {% if include.matrix %}
+            <a href="{{ include.matrix }}" title="Matrix"><i class="fa fa-comment"></i></a>
+        {% endif %}
+        {% if include.linkedin %}
+            <a href="{{ include.linkedin }}" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        {% endif %}
+        {% if include.facebook %}
+            <a href="{{ include.facebook }}" title="Facebook"><i class="fab fa-facebook"></i></a>
+        {% endif %}
+        {% if include.instagram %}
+            <a href="{{ include.instagram }}" title="Instagram"><i class="fab fa-instagram"></i></a>
+        {% endif %}
+       </div>
+    </div>
+  </div>

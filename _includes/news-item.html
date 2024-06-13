@@ -27,11 +27,11 @@
 
 <div class="mb-4">
   <div class="card-wrapper">
-    <div class="card">
+    <div class="card bg-light" data-bs-theme="light">
       <div class="card-body">
         <div class="d-flex align-items-start">
           {% if include.date %}
-            <span class="badge bg-secondary me-3">{{ include.date }}</span>
+            <span class="badge bg-badge me-3">{{ include.date }}</span>
           {% endif %}
           <div class="flex-grow-1">
             <span class="">{{ include.text }}</span>
