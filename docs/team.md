@@ -2,12 +2,13 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-layout: default
+layout: team
 title: Team
 ---
 
 # Bioinformatics Group - Members
 
+<div class="team-container">
 <!-- Rolf Backofen -->
 {% include team-card.html
           name="Rolf Backofen"
@@ -31,9 +32,11 @@ title: Team
           email="degenhel@informatik.uni-freiburg.de"
           location="Build.: 106, Room: 02 004"
 %}
+</div>
 
 # Building 106 - Team
 
+<div class="team-container">
 <!-- Martin Raden, nee Mann -->
 {% include team-card.html
           name="Martin Raden, nee Mann"
@@ -126,8 +129,30 @@ title: Team
           orcid="https://orcid.org/0000-0003-4161-4394"
 %}
 
+<!-- William Jobson Pargeter -->
+{% include team-card.html
+          name="William Jobson Pargeter"
+          title="M.Sc. Computer Science, Researcher"
+          github_link="https://github.com/wjp15"
+          email="pargeter@informatik.uni-freiburg.de"
+          phone="+49(0) 761 - 203 97529"
+          location="Build.: 106, Room: 02 007"
+%}
+
+<!-- Ryan Köksal -->
+{% include team-card.html
+          name="Ryan Köksal"
+          title="M.Sc. Inf., Researcher"
+          github_link="https://github.com/ivelet"
+          email="koeksalr@informatik.uni-freiburg.de"
+          phone="+49(0) 761 - 203 8239"
+          location="Build.: 106, Room: 02 011"
+%}
+</div>
+
 # Freiburg Galaxy Team
 
+<div class="team-container">
 <!-- Björn Grüning -->
 {% include team-card.html
           name="Björn Grüning"
@@ -383,9 +408,11 @@ title: Team
           mastodon="https://fedihum.org/@SchnDa"
           matrix="https://matrix.to/#/@schn_da:matrix.org"
 %}
+</div>
 
 # Technical Staff
 
+<div class="team-container">
 <!-- Stefan Jankowski -->
 {% include team-card.html
           name="Stefan Jankowski"
@@ -395,7 +422,7 @@ title: Team
           phone="+49(0) 761 - 203 8256"
           location="Build.: 106, Room: 02 013"
 %}
-
+</div>
 <!--
   <div class="team-title">Alumni</div>
   <div class="alumni-wrapper">
