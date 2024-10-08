@@ -13,7 +13,7 @@ title:  Publications
    <!-- Search Bar and Reset Button -->
   <div class="search-bar">
     <input type="text" id="search-bar" placeholder="Search..." />
-    <div id="reset-all-filters"></div>
+    <div id="reset-all-filters" class="fa-solid fa-clock-rotate-left fa-lg"></div>
   </div>
 
   <!-- Filter Panel -->

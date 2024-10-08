@@ -1,0 +1,130 @@
+year: 2024
+semester: ws
+lectures:
+  - name: "V+Ü: Machine Learning in Life Sciences (en)"
+    links:
+      - url: "https://ilias.uni-freiburg.de/goto.php?target=crs_3579283&client_id=unifreiburg"
+        text: "ILIAS"
+      - url: "https://campus.uni-freiburg.de/qisserver/pages/startFlow.xhtml?_flowId=detailView-flow&unitId=3434&periodId=2483&navigationPosition=examEventOverviewOwn"
+        text: "11LE13V-1112"
+      - url: "https://campus.uni-freiburg.de/qisserver/pages/startFlow.xhtml?_flowId=detailView-flow&unitId=3435&periodId=2483&navigationPosition=examEventOverviewOwn"
+        text: "11LE13Ü-1112"
+    lecturers:
+      - "Rolf Backofen"
+      - "A. Kumar"
+      - "S. Hauns"
+    time_slot: "We 14:00-16:00"
+    location: "Bld. 106 SR 00 007 (MMR)"
+    tutors:
+      - "A. Kumar"
+      - "S. Hauns"
+      - "R. Köksal"
+      - "A. Heidari"
+    exercise_sessions:
+      - time_slot: "Fri 10:00-12:00"
+        location: "Bld. 106 SR 00 007 (MMR)"
+    format: "In-person"
+    initial_meeting: "16.10.24 at 14:00 - 16:00 - Bld. 106 SR 00 007 (MMR)"
+
+  - name: "V+Ü: Bioinformatics I (en)"
+    links:
+      - url: ""
+        text: "ILIAS"
+      - url: "https://campus.uni-freiburg.de/qisserver/pages/startFlow.xhtml?_flowId=detailView-flow&unitId=3353&periodId=2483&navigationPosition=studiesOffered,searchCourses"
+        text: "11LE13V-1309"
+      - url: "https://campus.uni-freiburg.de/qisserver/pages/startFlow.xhtml?_flowId=detailView-flow&unitId=3354&periodId=2483&navigationPosition=studiesOffered,searchCourses"
+        text: "11LE13Ü-1309"
+    lecturers:
+      - "Rolf Backofen"
+    time_slot: "We 10:00-12:00"
+    location: "Bld. 101 SR 01-009/13"
+    tutors:
+      - "D. Rabsch"
+      - "A. Mitrofanov"
+      - "W. Pargeter"
+    exercise_sessions:
+      - time_slot: "Th 12:00-14:00"
+        location: "Bld. 106 SR 00 007 (MMR)"
+      - time_slot: "Th 14:00-16:00"
+        location: "Bld. 051 SR 00 034"
+    format: "In-person"
+    initial_meeting: "TBA"
+
+  - name: "V+Ü: Machine Learning in Life Sciences (en)"
+    links:
+      - url: "https://ilias.uni-freiburg.de/goto.php?target=crs_3595802&client_id=unifreiburg"
+        text: "ILIAS"
+      - url: "https://campus.uni-freiburg.de/qisserver/pages/startFlow.xhtml?_flowId=detailView-flow&unitId=7269&periodId=2483&navigationPosition=studiesOffered,searchCourses"
+        text: "11LE13V-720"
+      - url: "https://campus.uni-freiburg.de/qisserver/pages/startFlow.xhtml?_flowId=detailView-flow&unitId=7233&periodId=2483&navigationPosition=studiesOffered,searchCourses"
+        text: "11LE13Ü-720 "
+    lecturers:
+      - "Rolf Backofen"
+    time_slot: "Th 10:00-12:00"
+    location: "Bld. 101 HS 026"
+    tutors:
+      - Rick Gelhausen
+      - Michael Uhl
+      - Nikola Schuppan-Cruz
+      - Patrick Wirbel
+    exercise_sessions:
+      - time_slot: "Thu 10:00-12:00"
+        location: "Zoom"
+      - time_slot: "Thu 10:00-12:00"
+        location: "Zoom"
+    format: "In-person lecture + Online exercise session"
+    initial_meeting: "Th 17.10.2024 - 10:00-12:00 - Bld. 101 HS 026"
+
+
+  - name: "V+Ü: Introduction to data-driven life sciences (en)"
+    links:
+      - url: "https://ilias.uni-freiburg.de/goto.php?target=crs_3579739_rcodeCkzZKDmWdm&client_id=unifreiburg"
+        text: "ILIAS"
+      - url: "https://campus.uni-freiburg.de/qisserver/pages/startFlow.xhtml?_flowId=detailView-flow&unitId=47161&periodId=2483&navigationPosition=studiesOffered,searchCourses"
+        text: "11LE13V-1335"
+      - url: "https://campus.uni-freiburg.de/qisserver/pages/startFlow.xhtml?_flowId=detailView-flow&unitId=47162&periodId=2483&navigationPosition=studiesOffered,searchCourses"
+        text: "11LE13Ü-1335"
+    lecturers:
+      - "Rolf Backofen"
+      - "A. Erxleben"
+      - "Galaxy Team"
+    time_slot: "Tue 10:00-12:00"
+    location: "Bld. 106 SR 00 007 (MMR)"
+    tutors:
+      - "Galaxy Team"
+    exercise_sessions:
+      - time_slot: "Wed 12:00-14:00"
+        location: "Bld. 106 SR 00 007 (MMR)"
+    format: "In-person lecture and exercise session"
+    initial_meeting: "Tue 15.10.2024 - 10:15 - Bld. 106 SR 00 007 (MMR)"
+
+  - name: "V+Ü: High-Throughput data analysis with Galaxy (en)"
+    links:
+      - url: "https://ilias.uni-freiburg.de/goto.php?target=crs_3579285_rcodekW8EfKgnsB&client_id=unifreiburg"
+        text: "ILIAS"
+      - url: "https://campus.uni-freiburg.de/qisserver/pages/startFlow.xhtml?_flowId=detailView-flow&unitId=139722&periodId=2482&navigationPosition=studiesOffered,searchCourses"
+        text: "11LE13Ü-1350_PO 20220"
+    lecturers:
+      - "Rolf Backofen"
+      - "A. Erxleben"
+      - "Galaxy Team"
+    time_slot: "Block course: 10-14 March 2025"
+    location: "Self-learning (ILIAS) + Georges-Köhler-Allee 079, SR -1016"
+    format: "In-person block course"
+    initial_meeting: "Tue 15.10.2024 - 13:00 - Georges-Köhler-Allee 079, SR -1016 (basement)"
+
+  - name: "S: Proseminars - Introduction to (data analysis in) Bioinformatics (en)"
+    links:
+      - url: "https://ilias.uni-freiburg.de/goto.php?target=crs_3611422_rcodeDfywsPKEcp&client_id=unifreiburg"
+        text: "ILIAS"
+      - url: "https://campus.uni-freiburg.de/qisserver/pages/startFlow.xhtml?_flowId=detailView-flow&unitId=2719&periodId=2481&navigationPosition=studiesOffered,searchCourses"
+        text: "11LE13S-510-21"
+      - url: "https://campus.uni-freiburg.de/qisserver/pages/startFlow.xhtml?_flowId=detailView-flow&unitId=116852&periodId=2481&navigationPosition=studiesOffered,searchCourses"
+        text: "11LE13S-510-23"
+    lecturers:
+      - "Rolf Backofen"
+      - "T. Müller"
+    time_slot: "5-6th December 2024 (9:30-15:30) + 16-17 January 2025 (9:30-15:30)"
+    location: "Georges-Köhler-Allee 079, SR -1016 (basement)"
+    format: "In-person proseminar"
+    initial_meeting: "Wed 16.10.2024 - 12:00 - Georges-Köhler-Allee 079, SR -1016 (basement)"

@@ -9,6 +9,7 @@
     display: flex;
     position: relative;
     width: 100%;
+
 }
 
 
@@ -26,6 +27,8 @@
     background-position: 10px center;
     background-repeat: no-repeat;
     padding-left: 40px;
+    color: black;
+
 }
 
 #search-bar:focus {
@@ -38,10 +41,6 @@
     top: 50%;
     transform: translateY(-50%); /* Center vertically */
     display: none;
-    width: 20px;
-    height: 20px;
-    background-image: url("../images/reset.png");
-    background-size: cover;
     cursor: pointer;
     transition: transform 0.3s;
 }
@@ -96,6 +95,7 @@
     background-repeat: no-repeat;
     background-position: right .7em center; /* Position the icon on the right side of the select */
     background-size: 10px; /* Size of the icon */
+    color: black;
 }
 
 .filter-container select:hover {
@@ -121,6 +121,7 @@
     background-color:#F8F8F8; /* Light grey background */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Drop shadow for depth */
     transition: box-shadow 0.3s ease; /* Transition for hover effect */
+    color: black;
 }
 
 .publication:hover {
@@ -230,6 +231,7 @@
     .search-bar {
         width: 100%; /* Adjust width considering padding and the icon */
         box-sizing: border-box; /* This makes sure the input does not overflow its container due to padding */
+        color: black;
     }
 
     /* 2. Reduce the top margin */
@@ -242,6 +244,7 @@
         width: 80%; /* Adjust this value to what you find most suitable */
         min-width: 160px; /* minimum width */
         box-sizing: border-box; /* This makes sure the select does not overflow its container due to padding */
+        color: black;
     }
 
     #filter-toggle-button {
