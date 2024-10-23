@@ -1,0 +1,78 @@
+year: 2024
+semester: ss
+lectures:
+  - name: "V+Ü: Bioinformatics II (en)"
+    links:
+      - url: "https://ilias.uni-freiburg.de/goto.php?target=crs_3440729&client_id=unifreiburg"
+        text: "ILIAS"
+      - url: "https://campus.uni-freiburg.de/qisserver/pages/startFlow.xhtml?_flowId=detailView-flow&unitId=3357&periodId=2482&navigationPosition=studiesOffered,searchCourses"
+        text: "11LE13V-1310"
+      - url: "https://campus.uni-freiburg.de/qisserver/pages/startFlow.xhtml?_flowId=detailView-flow&unitId=3358&periodId=2482&navigationPosition=studiesOffered,searchCourses"
+        text: "11LE13Ü-1310"
+    lecturers:
+      - "Rolf Backofen"
+      - "D. Yusuf"
+    time_slot: "Tue 10:00-12:00"
+    location: "Bld. 106 SR 00 007 (MMR)"
+    tutors:
+      - "D. Rabsch"
+      - "Z. Dehghanighobadi"
+      - "R. Köksal"
+      - "W. Pargeter"
+      - "A. Mitrofanov"
+    exercise_sessions:
+      - time_slot: "We 10:00-12:00"
+        location: "Bld. 106 SR 00 007 (MMR)"
+      - time_slot: "We 10:00-12:00"
+        location: "Bld. 52 SR 02 017"
+    format: "In-person"
+    initial_meeting: "We 16.04.24 at 10:00 - 12:00 - Bld. 106 SR 00 007 (MMR)"
+
+  - name: "V+Ü: High-Throughput data analysis with Galaxy (en)"
+    links:
+      - url: "https://ilias.uni-freiburg.de/goto.php?target=crs_3579285_rcodekW8EfKgnsB&client_id=unifreiburg"
+        text: "ILIAS"
+      - url: "https://campus.uni-freiburg.de/qisserver/pages/startFlow.xhtml?_flowId=detailView-flow&unitId=139722&periodId=2482&navigationPosition=studiesOffered,searchCourses"
+        text: "11LE13Ü-1350_PO 20220"
+    lecturers:
+      - "Rolf Backofen"
+      - "A. Erxleben"
+      - "Galaxy Team"
+    time_slot: "Block course: 22-26 July 2024"
+    location: "Self-learning (ILIAS) + Georges-Köhler-Allee 079, SR -1016"
+    format: "In-person block course"
+    initial_meeting: "We 17.04.2024 - 12:00 - Georges-Köhler-Allee 079, SR -1016 (basement)"
+
+  - name: "S: Seminar - Machine Learning in Bioinformatics (en)"
+    links:
+      - url: "https://ilias.uni-freiburg.de/goto.php?target=crs_3448981&client_id=unifreiburg"
+        text: "ILIAS"
+      - url: "https://campus.uni-freiburg.de/qisserver/pages/startFlow.xhtml?_flowId=detailView-flow&unitId=3521&periodId=2482&navigationPosition=studiesOffered,searchCourses"
+        text: "11LE13S-7201"
+    lecturers:
+      - "Rolf Backofen"
+      - "M. Uhl"
+      - "A. Kumar"
+      - "S. Hauns"
+    time_slot: ""
+    location: "Bld 106 SR 00 007"
+    format: "In-person block course"
+    initial_meeting: "Thu 18.04.2024 - 16:00 - Georges-Köhler-Allee 079, SR -1016 (basement)"
+
+  - name: "S: Proseminars - Introduction to (data analysis in) Bioinformatics (en)"
+    links:
+      - url: "https://ilias.uni-freiburg.de/goto.php?target=crs_3611422_rcodeDfywsPKEcp&client_id=unifreiburg"
+        text: "ILIAS"
+      - url: "https://campus.uni-freiburg.de/qisserver/pages/startFlow.xhtml?_flowId=detailView-flow&unitId=2719&periodId=2481&navigationPosition=studiesOffered,searchCourses"
+        text: "11LE13S-510-21"
+      - url: "https://campus.uni-freiburg.de/qisserver/pages/startFlow.xhtml?_flowId=detailView-flow&unitId=116852&periodId=2481&navigationPosition=studiesOffered,searchCourses"
+        text: "11LE13S-510-23"
+    lecturers:
+      - "Rolf Backofen"
+      - "A. Erxleben"
+      - "S. Momin"
+      - "T. Müller"
+    time_slot: "15-16th May 2024 (9:30-15:30) + 13-14 June 2024 (9:30-15:30)"
+    location: "Georges-Köhler-Allee 079, SR -1016 (basement)"
+    format: "In-person block course"
+    initial_meeting: "Wed 17.04.2024 - 9:30 - Georges-Köhler-Allee 079, SR -1016 (basement)"

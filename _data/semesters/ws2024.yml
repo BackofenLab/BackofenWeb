@@ -24,11 +24,11 @@ lectures:
       - time_slot: "Fri 10:00-12:00"
         location: "Bld. 106 SR 00 007 (MMR)"
     format: "In-person"
-    initial_meeting: "16.10.24 at 14:00 - 16:00 - Bld. 106 SR 00 007 (MMR)"
+    initial_meeting: "We 16.10.24 at 14:00 - 16:00 - Bld. 106 SR 00 007 (MMR)"
 
   - name: "V+Ü: Bioinformatics I (en)"
     links:
-      - url: ""
+      - url: "https://ilias.uni-freiburg.de/goto.php?target=crs_3595777&client_id=unifreiburg"
         text: "ILIAS"
       - url: "https://campus.uni-freiburg.de/qisserver/pages/startFlow.xhtml?_flowId=detailView-flow&unitId=3353&periodId=2483&navigationPosition=studiesOffered,searchCourses"
         text: "11LE13V-1309"
@@ -48,7 +48,7 @@ lectures:
       - time_slot: "Th 14:00-16:00"
         location: "Bld. 051 SR 00 034"
     format: "In-person"
-    initial_meeting: "TBA"
+    initial_meeting: "We 16.10.24 at 10:00 - 12:00 - Bld. 101 SR 01-009/13"
 
   - name: "V+Ü: Machine Learning in Life Sciences (en)"
     links:
@@ -128,3 +128,5 @@ lectures:
     location: "Georges-Köhler-Allee 079, SR -1016 (basement)"
     format: "In-person proseminar"
     initial_meeting: "Wed 16.10.2024 - 12:00 - Georges-Köhler-Allee 079, SR -1016 (basement)"
+    contact_name: Teresa Müller
+    contact_mail: muellert@informatik.uni-freiburg.de

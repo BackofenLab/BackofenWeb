@@ -1,5 +1,5 @@
 
-<nav class="navbar navbar-expand-lg bg-secondary" data-bs-theme="light">
+<nav class="navbar navbar-expand-lg bg-primary mt-0 pt-0 ps-3" data-bs-theme="dark">
     <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -18,10 +18,14 @@
                 <li class="nav-item"><a class="nav-link" href="http://www.bioinf.uni-freiburg.de/Private/index.html?en">Intern</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/docs/disclaimer.html">Disclaimer</a></li>
             </ul>
-            <div class="form-check form-switch ms-auto">
-                <input class="form-check-input" type="checkbox" role="switch" id="toggle-color-mode">
-                <label class="form-check-label" for="toggle-color-mode"></label>
-              </div>
+            <div class="d-flex align-items-center ms-auto pe-3">
+                <i class="fa fa-sun text-light me-2"></i>
+                <div class="form-check form-switch ms-auto">
+                    <input class="form-check-input" type="checkbox" role="switch" id="toggle-color-mode">
+                    <label class="form-check-label" for="toggle-color-mode"></label>
+                </div>
+                <i class="fa fa-moon text-light ms-2"></i>
+            </div>
         </div>
     </div>
 </nav>
